@@ -1,0 +1,25 @@
+Hello, these would be the simple instruction notes for the Grade Calculator.
+
+How to setup?
+    After downloading all of the files, simply go to app.py and run the python program, this will open up the terminal and provide you the link to open the calculator.
+    [Step by Step Process]
+        1st - Download all files [styles.css under static folder, index.html under templates folder, and app.py(doesn't need to be under any folder)]                           How the link looks like
+        2nd - Simply run the program by going to running the app.py, this will give you the link to the calculator. [The link is UNDER the BRIGHT RED WARNING SIGN (e.g. Running on >>> http://127.0.0.1:5000 <<<)]
+
+How to use?
+    - Simply input any grades between 0 - 100 to any of the submissions. 
+
+Importan Notes:
+-If you manage to get a required grades of < 75 or > 100, it may be not possible for you to reach the passing grade.
+
+
+How does it work?
+    [One Input] --- [Best for knowing how much you need in the OTHER terms to reach the passing grade 75.]
+        -If you entered one grade into one of the three boxes provided, it will solve for your required grade in the other two boxes that you have not filled in.
+    
+    [Two Inputs] --- [Best for calculating how much you need in ONE term to reach the passing grade]
+        -If you entered two grades into two of the boxes out of three provided, it will solve for the last box you have not filled in.
+    
+    [Three Inputs] --- [Best for calculating the total grade you got in ALL of the terms (Prelims, Midterms, and Finals)]
+        -If you filled all of the boxes, it will calculate the overall result.
+    
