@@ -3,37 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask Input Form</title>
+    <title>Grade Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Enter Your Values</h1>
-        <form method="POST" action="https://perezlyncoln.pythonanywhere.com/">
-            <label for="input1">Prelim Grade:</label>
+        <form action="https://perezlyncoln.pythonanywhere.com/" method="POST">
+            <label for="prelim_grade">Prelim Grade:</label>
             <input type="text" id="prelim_grade" name="prelim_grade"><br><br>
 
-            <label for="input2">Midterm Grade:</label>
-            <input type="text" id="midterm_grade" name="midterm_grade" ><br><br>
+            <label for="midterm_grade">Midterm Grade:</label>
+            <input type="text" id="midterm_grade" name="midterm_grade"><br><br>
 
-            <label for="input3">Final Grade:</label>
-            <input type="text" id="final_grade" name="final_grade" ><br><br>
+            <label for="final_grade">Final Grade:</label>
+            <input type="text" id="final_grade" name="final_grade"><br><br>
 
             <button type="submit">Submit</button>
         </form>
 
-        {% if result %}
-        <div class="result">
-            <h2>Result:</h2>
-            <p>{{ result }}</p>
-        </div>
-        {% endif %}
-        {% if error %}
-        <div class="error">
-            <h2>Error:</h2>
-            <p>{{ error }}</p>
-        </div>
-        {% endif %}
+        <!-- Results will be displayed here -->
+        <div id="result"></div>
     </div>
 </body>
 </html>
